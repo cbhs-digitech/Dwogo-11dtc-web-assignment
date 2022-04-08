@@ -1,64 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 :root {
     /* BackGrounds */
-    --darkGround: #3e4c5e;
-    --lightGround: #d9f0ff;
+    --defaultGround: #3e4c5e;
+    --opGround: #d9f0ff;
     
     /* TextGrounds */
-    --darkTextBody: #536271;
-    --lightTextBody: #a3d5ff;
+    --defaultTextBody: #536271;
+    --opTextBody: #a3d5ff;
 
     /* HighestGrounds */
-    --lighterDarkBody: #6a687a;
-    --darkerLightBody: #83c9f4;
+    --defaultHighestBody: #6a687a;
+    --opHighestBody: #83c9f4;
 
     /* HighLight */
     --highLight: #6f73d2;
 
     /* HighestGrounds */
-    --lightModeText: #333;
-    --darkModeText: #fff;
+    --defaultFontColour: #fff;
+    --opFontColour: #333;
 
 }
+
+/* Light Mode perfered option */
 
 @media (prefers-color-scheme: light) {
     :root {
         /* BackGrounds */
-    --lightGround: #3e4c5e;
-    --darkGround: #d9f0ff;
+        --defaultGround: #d9f0ff;
+        --opGround: #3e4c5e;
     
-    /* TextGrounds */
-    --lightTextBody: #536271;
-    --darkTextBody: #a3d5ff;
+        /* TextGrounds */
+        --defaultTextBody: #a3d5ff;
+        --opTextBody: #536271;
 
-    /* HighestGrounds */
-    --darkerLightBody: #6a687a;
-    --ligherDarkBody: #83c9f4;
+        /* HighestGrounds */
+        --defaultHighestBody: #83c9f4;
+        --opHighestBody: #6a687a;
 
-    /* HighLight */
-    --highLight: #6f73d2;
+        /* HighLight */
+        --highLight: #6f73d2;
 
-    /* HighestGrounds */
-    --darkModeText: #333;
-    --lightModeText: #fff;
+        /* HighestGrounds */
+        --defaultFontColour: #333;
+        --opFontColour: #fff;
     }
 }
 
 .defaultMode {
-    --background: var(--darkGround);
-    --Textground: var(--darkTextBody);
-    --HighestGround: var(--lighterDarkBody);
-    --font: var(--darkModeText);
+    --background: var(--defaultGround);
+    --Textground: var(--defaultTextBody);
+    --HighestGround: var(--defaultHighestBody);
+    --font: var(--defaultFontColour);
 
     background-color: var(--background);
     color: var(--font);
+    font-family: 'Poppins', sans-serif;
 }
 
 .opMode {
-    --background: var(--lightGround);
-    --Textground: var(--lightTextBody);
-    --HighestGround: var(--darkerLightBody);
-    --font: var(--lightModeText);
+    --background: var(--opGround);
+    --Textground: var(--opTextBody);
+    --HighestGround: var(--opHighestBody);
+    --font: var(--opFontColour);
 
     background-color: var(--background);
     color: var(--font);
+    font-family: 'Poppins', sans-serif;
 }
