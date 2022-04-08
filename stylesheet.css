@@ -1,0 +1,64 @@
+:root {
+    /* BackGrounds */
+    --darkGround: #3e4c5e;
+    --lightGround: #d9f0ff;
+    
+    /* TextGrounds */
+    --darkTextBody: #536271;
+    --lightTextBody: #a3d5ff;
+
+    /* HighestGrounds */
+    --lighterDarkBody: #6a687a;
+    --darkerLightBody: #83c9f4;
+
+    /* HighLight */
+    --highLight: #6f73d2;
+
+    /* HighestGrounds */
+    --lightModeText: #333;
+    --darkModeText: #fff;
+
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* BackGrounds */
+    --lightGround: #3e4c5e;
+    --darkGround: #d9f0ff;
+    
+    /* TextGrounds */
+    --lightTextBody: #536271;
+    --darkTextBody: #a3d5ff;
+
+    /* HighestGrounds */
+    --darkerLightBody: #6a687a;
+    --ligherDarkBody: #83c9f4;
+
+    /* HighLight */
+    --highLight: #6f73d2;
+
+    /* HighestGrounds */
+    --darkModeText: #333;
+    --lightModeText: #fff;
+    }
+}
+
+.defaultMode {
+    --background: var(--darkGround);
+    --Textground: var(--darkTextBody);
+    --HighestGround: var(--lighterDarkBody);
+    --font: var(--darkModeText);
+
+    background-color: var(--background);
+    color: var(--font);
+}
+
+.opMode {
+    --background: var(--lightGround);
+    --Textground: var(--lightTextBody);
+    --HighestGround: var(--darkerLightBody);
+    --font: var(--lightModeText);
+
+    background-color: var(--background);
+    color: var(--font);
+}
