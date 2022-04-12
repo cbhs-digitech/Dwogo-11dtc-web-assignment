@@ -15,6 +15,7 @@
 
     /* HighLight */
     --highLight: #6f73d2;
+    --highLight-hover: #5c5eaf;
 
     /* HighestGrounds */
     --defaultFontColour: #fff;
@@ -23,7 +24,6 @@
 }
 
 /* Light Mode perfered option */
-
 @media (prefers-color-scheme: light) {
     :root {
         /* BackGrounds */
@@ -40,6 +40,7 @@
 
         /* HighLight */
         --highLight: #6f73d2;
+        --highLight-hover: #5c5eaf;
 
         /* HighestGrounds */
         --defaultFontColour: #333;
@@ -68,3 +69,23 @@
     color: var(--font);
     font-family: 'Poppins', sans-serif;
 }
+
+.nav-button {
+    border: none;
+    background-color: var(--highLight);
+    color: var(--defaultFontColour);
+    animation-name: example;
+    animation-duration: 4s;
+    padding: 15px;
+    
+}
+
+.dropdown-button {
+    rotate: 90deg;
+}
+
+.nav-button:hover {
+    background-color: var(--highLight-hover);
+}
+
+
