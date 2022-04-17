@@ -71,51 +71,51 @@
   position: relative;
 }
 
-nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: var(--defaultHighestBody);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-right: 5px;
+ul {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--HighestGround);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
-.top-drop {
-    background-color: white; 
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 50px;
+li {
+  border: none;
+  list-style: none;
 }
 
 .nav-button-top {
   background-color: var(--highLight);
+  position: relative;
   color: white;
   height: 50px;
   width: 50px;
   padding: 10px;
   text-align: center;
-  display: -ms-inline;
+  display: inline;
+  float: right;
 }
 
 .dropdown {
-    display: none;
-    background-color: var(--highLight);
-    color: white;
-    height: 50px;
-    width: 100px;
-    padding: 10px;
-    text-align: center;
-    margin-top: 10px;
+  background-color: var(--highLight);
+  color: white;
+  height: 50px;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
 }
 
-.dropdown-button:hover .dropdown {
-    display: block;
-  }
+.dropdown-button:focus .dropdown {
+  display: block;
+}
 
-.dropdown:hover, .nav-button-top:hover {
+.dropdown:hover,
+.nav-button-top:hover {
   background-color: var(--highLight-hover);
   cursor: pointer;
 }
