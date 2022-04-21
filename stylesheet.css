@@ -71,15 +71,15 @@
   position: relative;
 }
 
-ul {
+.navbar {
   position: fixed;
   right: 0;
   top: 0;
   background-color: var(--HighestGround);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 5px;
-  margin-right: 5px;
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+  margin-top:0.25rem;
+  margin-right: 0.25rem;
 }
 
 li {
@@ -91,31 +91,119 @@ li {
   background-color: var(--highLight);
   position: relative;
   color: white;
-  height: 50px;
-  width: 50px;
-  padding: 10px;
+  height: 2.5rem;
+  max-height: 50px;
+  width: 2.5rem;
+  max-width: 50px;
+  padding: 0.75rem;
   text-align: center;
   display: inline;
   float: right;
 }
 
-.dropdown {
-  background-color: var(--highLight);
-  color: white;
-  height: 50px;
-  width: 100px;
-  padding: 10px;
-  text-align: center;
-  margin-top: 10px;
-  display: none;
+.nav-button-top img {
+  height: 100%;
 }
 
-.dropdown-button:focus .dropdown {
+.dropdown {
+  position: relative;
+  transform: translate(0%);
+  background-color: var(--highLight);
+  color: white;
+  height: 2.5rem;
+  max-height: 50px;
+  width: 6.25rem;
+  max-width: 120px;
+  padding: 0.75rem;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+}
+
+.top-drop {
+  margin-top: 0rem;
+}
+
+.dropdown-button {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  border-right: 1px solid white;
+}
+
+.theme-button {
+  border-bottom-right-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  border-left: 1px solid white;
+}
+
+.dropdown-menu {
+  position: relative;
+  transform: translate(-16%);
+  display: none;
+  margin-top: 1.5rem;
+  background-color: var(--HighestGround);
+  width: 8rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.dropdown-button:hover .dropdown-menu {
   display: block;
 }
 
 .dropdown:hover,
-.nav-button-top:hover {
+.nav-button-top:hover,
+.logo:hover {
   background-color: var(--highLight-hover);
   cursor: pointer;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  float: left;
+  height: 70px;
+  width: 10%;
+  min-width: 60px;
+  max-width: 120px;
+  background-color: var(--highLight);
+  border-radius: 10px;
+}
+
+.logo img {
+  position: relative;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home {
+  position: absolute;
+  top: 0;
+}
+
+section,
+h1,
+footer {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  background-color: var(--Textground);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.title {
+  margin-top: 2rem;
+  color: white;
+  height: 20%;
+  background-color: var(--highLight);
+}
+
+footer {
+  background-color: var(--HighestGround);
+  margin-top: 2rem;
 }
