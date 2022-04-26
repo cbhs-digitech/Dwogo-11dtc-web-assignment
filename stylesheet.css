@@ -14,6 +14,7 @@
   --opHighestBody: #83c9f4;
 
   /* HighLight */
+  --highLighter: #8084e9;
   --highLight: #6f73d2;
   --highLight-hover: #5c5eaf;
 
@@ -38,6 +39,7 @@
     --opHighestBody: #6a687a;
 
     /* HighLight */
+    --highLighter: #8084e9;
     --highLight: #6f73d2;
     --highLight-hover: #5c5eaf;
 
@@ -143,7 +145,8 @@ li {
   margin-top: 1.5rem;
   background-color: var(--HighestGround);
   width: 8rem;
-  border-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
   padding: 0.75rem;
 }
 
@@ -206,4 +209,14 @@ footer {
 footer {
   background-color: var(--HighestGround);
   margin-top: 2rem;
+}
+
+.MIT {
+  color: var(--highLighter);
+  text-decoration: none;
+}
+
+.MIT:hover {
+  color: var(--highLight);
+  cursor: pointer;
 }
