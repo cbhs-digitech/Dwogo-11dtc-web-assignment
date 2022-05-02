@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
   </head>
   <body class="defaultMode">
-    <a class="logo" onclick="window.location.href='index.html'"
+    <a class="logo" href="#home"
       ><img src="/images/favicon.png"
     /></a>
     <ul class="navbar">
@@ -20,12 +20,18 @@
         |||
         <ul class="dropdown-menu">
           <li
-            onclick="window.location.href='prevent.html'"
+            href="index.html"
             class="dropdown top-drop"
+          >
+            Homepage
+          </li>
+          <li
+            href="prevent.html"
+            class="dropdown"
           >
             Prevent
           </li>
-          <li onclick="window.location.href='ransom.html'" class="dropdown">
+          <li href="ransom.html" class="dropdown">
             Ransom
           </li>
         </ul>

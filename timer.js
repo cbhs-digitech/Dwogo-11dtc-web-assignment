@@ -1,29 +1,18 @@
 "use strict";
 
-// Set the date we're counting down to
-var countDownDate = new Date("Jun 25, 2022 12:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function () {
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Output the result in an element with id="demo"
-  document.getElementById("timerLeft").innerHTML =
-    "Time Left: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timerLeft").innerHTML = "EXPIRED";
+setInterval(function time(){
+  var d = new Date();
+  var hours = 24 - d.getHours();
+  var min = 60 - d.getMinutes();
+  if((min + '').length == 1){
+    min = '0' + min;
   }
+  var sec = 60 - d.getSeconds();
+  if((sec + '').length == 1){
+        sec = '0' + sec;
+  }
+  
+  document.getElementById("timerLeft").innerHTML =
+    "Time Left: " + hours + "h " + min + "m " + sec + "s ";
+
 }, 1000);
