@@ -221,6 +221,25 @@ footer {
   width: 96%;
 }
 
+.homepage-sec {
+  display: flex;
+  flex-direction: row;
+}
+
+.homepage-sec p {
+  flex: 75%;
+}
+
+.lock {
+  flex: 25%;
+  height: 20rem;
+}
+
+.lock p {
+  margin-top: -1rem;
+ font-size: small;
+}
+
 .MIT {
   color: var(--highLighter);
   text-decoration: none;
