@@ -210,9 +210,9 @@ footer {
 
 .title {
   margin-top: 2rem;
-  color: white;
+  color: var(--font);
   height: 20%;
-  background-color: var(--highLight);
+  background-color: var(--Textground);
 }
 
 footer {
@@ -293,8 +293,24 @@ footer {
 
 .monologue,
 .side,
-.timer {
+.timer,
+.based-on {
   background-color: var(--Textground);
   border-radius: 0.75rem;
   padding: 0.75rem;
+}
+
+.based-on img {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.based-on p {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
