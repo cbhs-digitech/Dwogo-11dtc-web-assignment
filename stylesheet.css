@@ -300,6 +300,8 @@ footer {
   padding: 0.75rem;
 }
 
+.based-on {padding-bottom: -2rem;}
+
 .based-on img {
   position: relative;
   width: 70%;
