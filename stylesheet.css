@@ -282,7 +282,6 @@ footer {
 
 .timer {
   flex: 5%;
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
@@ -293,6 +292,7 @@ footer {
 
 .monologue {
   flex: 95%;
+  margin-bottom: 1rem;
 }
 
 .monologue,
