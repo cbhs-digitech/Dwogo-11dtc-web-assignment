@@ -388,6 +388,8 @@ footer {
 /* Input box */
 .side input {
   width: 100%;
+  background-color: grey;
+  border-radius: 0.5rem;
 }
 
 /* Parent of the timer and monologue */
