@@ -8,7 +8,6 @@ html {
  * Colourscheme auto switch
 ######################## */
 
-
 /* If the user's os prefers the dark colourscheme these are the default colours */
 :root {
   /* BackGrounds */
@@ -91,7 +90,6 @@ html {
 #  Navbar config
 ################################*/
 
-
 li {
   border: none;
   list-style: none;
@@ -100,7 +98,7 @@ li {
 /* This is the dropdown */
 .navbar {
   position: fixed;
-  z-index:9999999;
+  z-index: 9999999;
   right: 0;
   top: 0;
   background-color: var(--HighestGround);
@@ -192,7 +190,7 @@ li {
 
 /* Logo button */
 .logo {
-  z-index:9999999;
+  z-index: 9999999;
   position: fixed;
   top: 0;
   float: left;
@@ -305,7 +303,6 @@ section {
   background-color: var(--Textground);
 }
 
-
 /* Footer at the bottom of all pages */
 footer {
   position: relative;
@@ -349,7 +346,7 @@ footer {
 /* Credits for the lock image */
 .lock p {
   margin-top: -1.5rem;
- font-size: small;
+  font-size: small;
 }
 
 /* Anchor for the MIT license link */
@@ -369,7 +366,6 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
 
 /* for the top 3 boxes in the ransom.html */
 .flex-container {
@@ -431,7 +427,9 @@ footer {
 }
 
 /* Box that has image of WannaCry on it */
-.based-on {padding-bottom: -2rem;}
+.based-on {
+  padding-bottom: -2rem;
+}
 
 /* WannaCry image */
 .based-on img {
