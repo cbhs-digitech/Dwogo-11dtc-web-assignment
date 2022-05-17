@@ -325,6 +325,8 @@ footer {
 /* The left input box */
 .side {
   flex: 20%;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 /* Input box */
@@ -356,6 +358,8 @@ footer {
 .monologue {
   flex: 95%;
   margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 /* Default values that all boxes share in ransom.html */
@@ -386,6 +390,18 @@ footer {
   position: relative;
   left: 50%;
   transform: translate(-50%);
+}
+
+.stages {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.bitcoin {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 10rem;
 }
 
 /* End of Ransom.html */

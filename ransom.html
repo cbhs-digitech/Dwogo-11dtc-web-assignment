@@ -43,27 +43,47 @@
       <div class="flex-container">
         <div class="side">
           <h1>Payment</h1>
+          <img src="/images/bitcoin.png" class="bitcoin"/>
+          <br />
+          <br />
+          <input type="text" />
           <p>
           This is the section where you would have to insert your Bitcoin Public Key to hopefully decrypt your data
           </p>
-          <input type="text" />
         </div>
 
         <div class="main">
 
           <div class="monologue">
-            Usaully when a device is infected from the hidden malware (Usaully hidden in conventional everyday 
-            files like PDFs, DOCX (Word), XLS (Excel), PPTX (PowerPoint), or even Executable files) the malware
-            may lay dormant before a switch is activated, or when the device is in a vulnerable state, or immediately take effect.
-            When the malware does turn on it takes immediate effect of the device running around encrypting files, 
-            folders, or the system. 
-
             Generalised stages of a ransomware attack:
-            
-            <ul>
+            <ul class="stages">
             <li> 1. Infection
             <br />
-            The malware is downloaded
+            The malware is downloaded from an infected source hidden in an everyday file like a 
+            PDF, Word Documents, or PowerPoint documents. Once the infected file is opened the malicious code is installed onto the system. 
+            The malware can be activated later after installation
+            </li>
+            <br />
+            <li> 2. Execution
+            <br />
+            Once the malware is activated, the ransomware scans to map target files and log determined locations on the
+            local device or network-accessible systems where the malware can be executed
+            </li>
+            <br/>
+            <li> 3. Encryption
+            <br />
+            Keys are usaully used in ransomware. After the ransomware has mapped its target a key exchange is
+            made between the infected device/network to a control server. The encryption key signs all of the
+            data so that it can only be opened with the key. Furthermore, the ransomware locks access to the 
+            victim's data amd removes the user's administrative rights.
+            </li>
+            <br />
+            <li> 4. Notification
+            <br />
+            Post encryption, a notification is shown to the victim. The hacker sends how much they demand
+            to unencrypt or remove the ransomware from the victim's device. The hacker can pressurize the
+            victim by adding a deadline or adding an increaing ransom as time goes on. If the victim
+            failed to pay the ransom, the hacker can initiate the process of corrupting or deleting the victim's data
             </li>
             </ul>
             
