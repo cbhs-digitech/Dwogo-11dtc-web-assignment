@@ -4,6 +4,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ######################
+ * Colourscheme auto switch
+######################## */
+
+
+/* If the user's os prefers the dark colourscheme these are the default colours */
 :root {
   /* BackGrounds */
   --defaultGround: #3e4c5e;
@@ -53,6 +59,7 @@ html {
   }
 }
 
+/* This would be the theme that the system prefers */
 .defaultMode {
   --background: var(--defaultGround);
   --Textground: var(--defaultTextBody);
@@ -65,6 +72,7 @@ html {
   position: relative;
 }
 
+/* If the user decides they want to overide their system color scheme they can */
 .opMode {
   --background: var(--opGround);
   --Textground: var(--opTextBody);
@@ -77,6 +85,19 @@ html {
   position: relative;
 }
 
+/* End of Colourscheme config */
+
+/* ###############################
+#  Navbar config
+################################*/
+
+
+li {
+  border: none;
+  list-style: none;
+}
+
+/* This is the dropdown */
 .navbar {
   position: fixed;
   z-index:9999999;
@@ -89,11 +110,7 @@ html {
   margin-right: 0.25rem;
 }
 
-li {
-  border: none;
-  list-style: none;
-}
-
+/* The visible part of the navbar */
 .nav-button-top {
   background-color: var(--highLight);
   position: relative;
@@ -108,10 +125,12 @@ li {
   float: right;
 }
 
+/* The moon icon */
 .nav-button-top img {
   height: 100%;
 }
 
+/* Dropdown section */
 .dropdown {
   position: relative;
   transform: translate(0%);
@@ -127,22 +146,21 @@ li {
   border-radius: 0.75rem;
 }
 
-.top-drop {
-  margin-top: 0rem;
-}
-
+/* Button for the dropdown */
 .dropdown-button {
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
   border-right: 1px solid white;
 }
 
+/* Button to overide the theme */
 .theme-button {
   border-bottom-right-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
   border-left: 1px solid white;
 }
 
+/* Box surrounding the dropdown buttons */
 .dropdown-menu {
   position: relative;
   transform: translate(-16%);
@@ -155,10 +173,12 @@ li {
   padding: 0.75rem;
 }
 
+/* Action to show the dropdown when you hover over the dropdown-button */
 .dropdown-button:hover .dropdown-menu {
   display: block;
 }
 
+/* Highlight all buttons when hovered */
 .dropdown:hover,
 .nav-button-top:hover,
 .logo:hover {
@@ -166,6 +186,7 @@ li {
   cursor: pointer;
 }
 
+/* Logo button */
 .logo {
   z-index:9999999;
   position: fixed;
@@ -179,6 +200,7 @@ li {
   border-radius: 10px;
 }
 
+/* Logo image */
 .logo img {
   position: relative;
   height: 60px;
@@ -187,11 +209,20 @@ li {
   transform: translate(-50%, -50%);
 }
 
+/* This is to get the user back to the top of the page */
 #home {
   position: absolute;
   top: 0;
 }
 
+/* End of Navbar 
+################################### */
+
+/* #################################
+  Content section 
+################################# */
+
+/* Getting all header (h1) to be center  */
 h1 {
   position: relative;
   left: 50%;
@@ -202,8 +233,8 @@ h1 {
   text-align: center;
 }
 
-section,
-footer {
+/* Section */
+section {
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -214,6 +245,7 @@ footer {
   text-align: center;
 }
 
+/* Title bar on the top of all pages */
 .title {
   margin-top: 2rem;
   color: var(--font);
@@ -221,60 +253,86 @@ footer {
   background-color: var(--Textground);
 }
 
+
+/* Footer at the bottom of all pages */
 footer {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
   background-color: var(--HighestGround);
   margin-top: 1rem;
   width: 96%;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
 }
 
-.homepage-sec {
+/* End of Index.html and Prevent.html */
+
+/* ###########################
+  Ransom.html specific css
+############################ */
+
+/* Flexbox for the top section of the index.html content */
+.content-top {
   display: flex;
   flex-direction: row;
 }
 
-.homepage-sec p {
+/* First paragraph of index.html */
+.content-top p {
   flex: 75%;
 }
 
+/* Lock image div */
 .lock {
   flex: 25%;
   height: 20rem;
 }
 
+/* Credits for the lock image */
 .lock p {
   margin-top: -1.5rem;
  font-size: small;
 }
 
+/* Anchor for the MIT license link */
 .MIT {
   color: var(--highLighter);
   text-decoration: none;
 }
 
+/* Hover effect like the nav buttons */
 .MIT:hover {
   color: var(--highLight);
   cursor: pointer;
 }
 
+/* Parent container for whole ransomware section */
 .flexi {
   display: flex;
   flex-direction: column;
 }
 
+
+/* for the top 3 boxes in the ransom.html */
 .flex-container {
   padding: 1rem;
   display: flex;
   height: 50rem;
 }
 
+/* The left input box */
 .side {
   flex: 20%;
 }
 
+/* Input box */
 .side input {
   width: 100%;
 }
 
+/* Parent of the timer and monologue */
 .main {
   flex: 80%;
   display: flex;
@@ -282,21 +340,25 @@ footer {
   margin-left: 1rem;
 }
 
+/* Timer section */
 .timer {
   flex: 5%;
   display: flex;
   align-items: center;
 }
 
+/* Text on the timer */
 .timer h1 {
   text-align: center;
 }
 
+/* The box explaining this */
 .monologue {
   flex: 95%;
   margin-bottom: 1rem;
 }
 
+/* Default values that all boxes share in ransom.html */
 .monologue,
 .side,
 .timer,
@@ -306,8 +368,10 @@ footer {
   padding: 0.75rem;
 }
 
+/* Box that has image of WannaCry on it */
 .based-on {padding-bottom: -2rem;}
 
+/* WannaCry image */
 .based-on img {
   position: relative;
   width: 70%;
@@ -316,9 +380,12 @@ footer {
   transform: translate(-50%);
 }
 
+/* Credits */
 .based-on p {
   text-align: center;
   position: relative;
   left: 50%;
   transform: translate(-50%);
 }
+
+/* End of Ransom.html */
