@@ -172,9 +172,7 @@ li {
 }
 
 /* Action to show the dropdown when you hover over the dropdown-button */
-.dropdown-button:hover .dropdown-menu {
-  display: block;
-}
+.show-drop { display: block; }
 
 /* Highlight all buttons when hovered */
 .dropdown:hover,
