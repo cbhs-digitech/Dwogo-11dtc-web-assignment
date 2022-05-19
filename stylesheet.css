@@ -407,6 +407,7 @@ footer {
 /* Text on the timer */
 .timer h1 {
   text-align: center;
+  font-size: 1.25rem;
 }
 
 /* The box explaining this */
