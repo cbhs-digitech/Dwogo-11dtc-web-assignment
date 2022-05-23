@@ -428,16 +428,11 @@ footer {
   padding: 0.75rem;
 }
 
-/* Box that has image of WannaCry on it */
-.based-on {
-  padding-bottom: -2rem;
-}
-
 /* WannaCry image */
 .based-on img {
   position: relative;
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   left: 50%;
   transform: translate(-50%);
 }
